@@ -1,0 +1,35 @@
+h1{
+    background-color: steelblue;
+}
+h2{               
+    border: solid;
+    border-color: steelblue;
+}
+h3{
+    color: cornflowerblue;
+    font-family: sans-serif;
+}
+.contrainer{
+    width:1200px;
+    margin:0 auto;
+}
+.box{
+    display: grid;   
+    grid-template-columns: 400px 400px 400px;             
+}
+video{
+    margin-left: 50px;
+}
+.mid{
+    margin-top: 100px;
+}
+.flex-layout{
+    display: flex;
+}
+.flex-layout div{
+    font-size: xx-large;
+    background-color: steelblue;
+    margin: 1px;
+    text-align: center;
+    height: 50px;
+}
