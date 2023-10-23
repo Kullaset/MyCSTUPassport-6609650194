@@ -1,35 +1,62 @@
-h1{
-    background-color: steelblue;
+* {
+ box-sizing: border-box;
 }
-h2{               
-    border: solid;
-    border-color: steelblue;
-}
-h3{
-    color: cornflowerblue;
-    font-family: sans-serif;
-}
-.contrainer{
-    width:1200px;
-    margin:0 auto;
-}
-.box{
-    display: grid;   
-    grid-template-columns: 400px 400px 400px;             
-}
-video{
-    margin-left: 50px;
-}
-.mid{
-    margin-top: 100px;
-}
-.flex-layout{
-    display: flex;
-}
-.flex-layout div{
-    font-size: xx-large;
-    background-color: steelblue;
-    margin: 1px;
+  
+ 
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+ 
+  .header {
+    padding: 60px;
     text-align: center;
-    height: 50px;
-}
+    background: #4f81df;
+    color: white;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    background-color: #333;
+  }
+  
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+  .side {
+    flex: 30%;
+    background-color: #85a3ef;
+    padding: 20px;
+  }
+  
+
+  .main {
+    flex: 70%;
+    background-color: rgb(197, 213, 235);
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
